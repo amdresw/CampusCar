@@ -20,18 +20,17 @@ La base de datos incluye las siguientes entidades principales:
 - Servicios de mantenimiento: Contiene los registros de los servicios realizados a los vehículos vendidos, incluyendo el tipo de servicio, fecha y detalles del trabajo realizado.
   
 Diagrama UML E-R.
+
 El diagrama UML E-R de la base de datos ilustra las relaciones entre las diferentes tablas. Se han definido las siguientes relaciones:
 
-Vehículo - Venta: Un vehículo puede ser vendido a un cliente, y cada venta está asociada a un único vendedor.
-
-Cliente - Venta: Un cliente puede realizar múltiples compras a lo largo del tiempo, por lo que existe una relación uno a muchos entre clientes y ventas.
-
-Vendedor - Venta: Un vendedor puede estar asociado a múltiples ventas, por lo que existe una relación uno a muchos entre vendedores y ventas.
-
-Vehículo - Servicio de Mantenimiento: Un vehículo puede tener múltiples servicios de mantenimiento asociados, por lo que existe una relación uno a muchos entre vehículos y servicios de mantenimiento.
+- Vehículo - Venta: Un vehículo puede ser vendido a un cliente, y cada venta está asociada a un único vendedor.
+- Cliente - Venta: Un cliente puede realizar múltiples compras a lo largo del tiempo, por lo que existe una relación uno a muchos entre clientes y ventas.
+- Vendedor - Venta: Un vendedor puede estar asociado a múltiples ventas, por lo que existe una relación uno a muchos entre vendedores y ventas.
+- Vehículo - Servicio de Mantenimiento: Un vehículo puede tener múltiples servicios de mantenimiento asociados, por lo que existe una relación uno a muchos entre vehículos y servicios de mantenimiento.
 
 
 Decisiones de Diseño.
+
 Modelo Relacional: Se optó por un modelo relacional, ya que la base de datos contiene diferentes entidades que tienen relaciones bien definidas (como ventas, clientes y vehículos).
 Normalización: Las tablas están normalizadas para evitar la redundancia de datos y asegurar la consistencia. Cada entidad tiene su propia tabla, y las relaciones entre ellas están establecidas a través de claves foráneas.
 Integridad de Datos: Se implementaron restricciones de integridad referencial y de unicidad para garantizar que los datos sean válidos y consistentes.
