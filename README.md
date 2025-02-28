@@ -1,7 +1,8 @@
 # CampusCar
 Este proyecto tiene como objetivo el diseño y la implementación de una base de datos para un concesionario de vehículos. La base de datos permitirá gestionar la información relacionada con vehículos en stock, clientes, vendedores, transacciones de ventas y servicios de mantenimiento. El proyecto incluye un diagrama UML E-R que representa la estructura de la base de datos, así como una documentación detallada que explica las decisiones de diseño, las relaciones entre las tablas y las restricciones impuestas.
 
-*Objetivo del Proyecto.*
+# *Objetivo del Proyecto.*
+
 El concesionario de vehículos necesita una base de datos que pueda gestionar de manera eficiente las siguientes entidades:
 
 - Vehículos en stock: Información sobre los vehículos disponibles para la venta.
@@ -11,7 +12,7 @@ El concesionario de vehículos necesita una base de datos que pueda gestionar de
 - Servicios de mantenimiento: Registro de los servicios realizados a los vehículos vendidos, incluyendo fechas y detalles de los trabajos realizados.
 - Características Principales
   
-*La base de datos incluye las siguientes entidades principales:*
+# *La base de datos incluye las siguientes entidades principales:*
 
 - Vehículos: Almacena la información sobre los vehículos disponibles, como marca, modelo, año, precio, color, tipo de combustible, etc.
 - Clientes: Contiene los datos de los clientes, como nombre, dirección, teléfono, correo electrónico y tipo de cliente.
@@ -19,7 +20,7 @@ El concesionario de vehículos necesita una base de datos que pueda gestionar de
 - Ventas: Registra las ventas realizadas, con detalles como el cliente, el vehículo, el precio de venta, la fecha de venta y el vendedor asociado.
 - Servicios de mantenimiento: Contiene los registros de los servicios realizados a los vehículos vendidos, incluyendo el tipo de servicio, fecha y detalles del trabajo realizado.
   
-*Diagrama UML E-R.*
+# *Diagrama UML E-R.*
 
 El diagrama UML E-R de la base de datos ilustra las relaciones entre las diferentes tablas. Se han definido las siguientes relaciones:
 
@@ -28,7 +29,7 @@ El diagrama UML E-R de la base de datos ilustra las relaciones entre las diferen
 - Vendedor - Venta: Un vendedor puede estar asociado a múltiples ventas, por lo que existe una relación uno a muchos entre vendedores y ventas.
 - Vehículo - Servicio de Mantenimiento: Un vehículo puede tener múltiples servicios de mantenimiento asociados, por lo que existe una relación uno a muchos entre vehículos y servicios de mantenimiento.
 
-*Relaciones y restricciones.*
+# *Relaciones y restricciones.*
 
 Las siguientes relaciones y restricciones han sido definidas para garantizar la integridad de la base de datos:
 
@@ -37,7 +38,7 @@ Las siguientes relaciones y restricciones han sido definidas para garantizar la 
 - Restricciones de tipo: Cada tipo de entidad tiene restricciones para asegurarse de que los datos sean válidos. Por ejemplo, el precio de un vehículo no puede ser negativo, y el correo electrónico de un cliente debe tener un formato válido.
 
 
-*Decisiones de Diseño.*
+# *Decisiones de Diseño.*
 
 Modelo Relacional: Se optó por un modelo relacional, ya que la base de datos contiene diferentes entidades que tienen relaciones bien definidas (como ventas, clientes y vehículos).
 
