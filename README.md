@@ -2,6 +2,7 @@
 Este proyecto tiene como objetivo el diseño y la implementación de una base de datos para un concesionario de vehículos. La base de datos permitirá gestionar la información relacionada con vehículos en stock, clientes, vendedores, transacciones de ventas y servicios de mantenimiento. El proyecto incluye un diagrama UML E-R que representa la estructura de la base de datos, así como una documentación detallada que explica las decisiones de diseño, las relaciones entre las tablas y las restricciones impuestas.
 
 *Objetivo del Proyecto.*
+
 El concesionario de vehículos necesita una base de datos que pueda gestionar de manera eficiente las siguientes entidades:
 
 - Vehículos en stock: Información sobre los vehículos disponibles para la venta.
