@@ -10,7 +10,7 @@ El concesionario de vehículos necesita una base de datos que pueda gestionar de
 - Ventas: Registro de las ventas realizadas, incluyendo detalles sobre el vehículo y el cliente.
 - Servicios de mantenimiento: Registro de los servicios realizados a los vehículos vendidos, incluyendo fechas y detalles de los trabajos realizados.
 - Características Principales
-- 
+  
 La base de datos incluye las siguientes entidades principales:
 
 - Vehículos: Almacena la información sobre los vehículos disponibles, como marca, modelo, año, precio, color, tipo de combustible, etc.
@@ -23,8 +23,11 @@ Diagrama UML E-R.
 El diagrama UML E-R de la base de datos ilustra las relaciones entre las diferentes tablas. Se han definido las siguientes relaciones:
 
 Vehículo - Venta: Un vehículo puede ser vendido a un cliente, y cada venta está asociada a un único vendedor.
+
 Cliente - Venta: Un cliente puede realizar múltiples compras a lo largo del tiempo, por lo que existe una relación uno a muchos entre clientes y ventas.
+
 Vendedor - Venta: Un vendedor puede estar asociado a múltiples ventas, por lo que existe una relación uno a muchos entre vendedores y ventas.
+
 Vehículo - Servicio de Mantenimiento: Un vehículo puede tener múltiples servicios de mantenimiento asociados, por lo que existe una relación uno a muchos entre vehículos y servicios de mantenimiento.
 
 
